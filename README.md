@@ -21,7 +21,7 @@ CREATE TABLE user(
 ![登录](img/img3.jpg)
 双人游戏演示
 
-![双人游戏](img/playvsplay.gif){width=50% height=auto}
+![playvsplay](img/playvsplay.gif "playvsplay"){width=50% height=auto}
 
 ## 电脑AI
 电脑AI采用计分策略，对与棋盘上每个点计算与该点相关的五元组得分信息，选择得分最高的点落子。
@@ -38,7 +38,7 @@ CREATE TABLE user(
     scoretable["00222"] = 1800;
     scoretable["02222"] = 100000;
 ```
-![AI](img/playvsai.gif){width=50% height=auto}
+![AI](img/playvsai.gif "playvsai"){ width=50% height=auto }
 ## 完整项目和可执行文件
 [百度云](https://pan.baidu.com/s/1p2ArnssJ5WBnyNc-d0gcrA ) 提取码：4g31
 
