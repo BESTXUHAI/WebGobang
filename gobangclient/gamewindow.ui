@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameWindow</class>
+ <widget class="QWidget" name="GameWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>630</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>630</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>630</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>五子棋</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resourse.qrc">
+    <normaloff>:/images/tubiao.png</normaloff>:/images/tubiao.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#GameWindow
+{
+	border-image: url(:/images/backGround.png);
+}</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>631</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="chessboardlayout">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetFixedSize</enum>
+    </property>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="startButton">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>510</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	border-image: url(:/images/buttonimg.png);
+	color: rgb(0,0,0);
+	font: 20px;
+}
+QPushButton:hover
+{
+	color: rgb(255,255,255);
+}
+QPushButton:pressed
+{
+	
+	border-image: url(:/images/btn_press.png);
+}
+QPushButton:disabled
+{
+	border-image: url(:/images/btn_press.png);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>开始游戏</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="repentanceButton">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>510</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	border-image: url(:/images/buttonimg.png);
+	color: rgb(0,0,0);
+	font: 20px;
+}
+QPushButton:hover
+{
+	color: rgb(255,255,255);
+}
+QPushButton:pressed
+{
+	
+	border-image: url(:/images/btn_press.png);
+}
+QPushButton:disabled
+{
+	border-image: url(:/images/btn_press.png);
+}</string>
+   </property>
+   <property name="text">
+    <string>悔棋</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="restartButton">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>560</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	border-image: url(:/images/buttonimg.png);
+	color: rgb(0,0,0);
+	font: 20px;
+}
+QPushButton:hover
+{
+	color: rgb(255,255,255);
+}
+QPushButton:pressed
+{
+	
+	border-image: url(:/images/btn_press.png);
+}
+QPushButton:disabled
+{
+	border-image: url(:/images/btn_press.png);
+}</string>
+   </property>
+   <property name="text">
+    <string>重新开始</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="returnButton">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>560</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	border-image: url(:/images/buttonimg.png);
+	color: rgb(0,0,0);
+	font: 20px;
+}
+QPushButton:hover
+{
+	color: rgb(255,255,255);
+}
+QPushButton:pressed
+{
+	
+	border-image: url(:/images/btn_press.png);
+}
+QPushButton:disabled
+{
+	border-image: url(:/images/btn_press.png);
+}</string>
+   </property>
+   <property name="text">
+    <string>返回菜单</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>9</y>
+     <width>351</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="Player2imglabel">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="p2namelabel">
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_8">
+      <item>
+       <widget class="QLabel" name="gamemodelabel">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="Player1imglabel">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="p1namelabel">
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>电脑玩家</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="metalabel">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>480</y>
+     <width>341</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resourse.qrc"/>
+ </resources>
+ <connections/>
+</ui>

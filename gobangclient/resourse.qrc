@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Welcome.jpg</file>
+        <file>images/buttonimg.png</file>
+        <file>images/btn_press.png</file>
+        <file>images/chessboardgrd.jpg</file>
+        <file>images/blackchess.png</file>
+        <file>images/whitechess.png</file>
+        <file>images/tipschess.png</file>
+        <file>images/dialogimg.jpg</file>
+        <file>images/win.png</file>
+        <file>images/tubiao.png</file>
+        <file>images/AIvsAI.png</file>
+        <file>images/AIvsPlayer.png</file>
+        <file>images/PlayervsPlayer.png</file>
+        <file>images/AIimg.jpg</file>
+        <file>images/backGround.png</file>
+        <file>images/human.png</file>
+        <file>images/peace.png</file>
+    </qresource>
+</RCC>
