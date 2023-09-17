@@ -18,11 +18,11 @@ CREATE TABLE user(
 客户端登录账号连接服务器
 ![登录](img/img3.jpg)
 双人游戏演示
-[双人游戏](img/playvsplay.gif)
+![双人游戏](img/playvsplay.gif)
 ## 电脑AI
 电脑AI采用计分策略，对与棋盘上每个点计算与该点相关的五元组得分信息，选择得分最高的点落子。
 五元组计分规则如下,AI效果还不错。
-'''
+```
     //权值计算，0代表空，1代表当前棋子，2代表对方的棋子
     scoretable["00000"] = 7;
     scoretable["00001"] = 35;
@@ -33,8 +33,8 @@ CREATE TABLE user(
     scoretable["00022"] = 400;
     scoretable["00222"] = 1800;
     scoretable["02222"] = 100000;
-'''
-![AI](playvsai.gif)
+```
+![AI](img/playvsai.gif)
 
 
 
