@@ -26,16 +26,16 @@ CREATE TABLE user(
 电脑AI采用计分策略，对与棋盘上每个点计算与该点相关的五元组得分信息，选择得分最高的点落子。
 五元组计分规则如下,AI效果还不错。
 ```
-    //权值计算，0代表空，1代表当前棋子，2代表对方的棋子
-    scoretable["00000"] = 7;
-    scoretable["00001"] = 35;
-    scoretable["00011"] = 800;
-    scoretable["00111"] = 15000;
-    scoretable["01111"] = 800000;
-    scoretable["00002"] = 15;
-    scoretable["00022"] = 400;
-    scoretable["00222"] = 1800;
-    scoretable["02222"] = 100000;
+//权值计算，0代表空，1代表当前棋子，2代表对方的棋子
+scoretable["00000"] = 7;
+scoretable["00001"] = 35;
+scoretable["00011"] = 800;
+scoretable["00111"] = 15000;
+scoretable["01111"] = 800000;
+scoretable["00002"] = 15;
+scoretable["00022"] = 400;
+scoretable["00222"] = 1800;
+scoretable["02222"] = 100000;
 ```
 <img src="img/playvsai.gif" width="50%" height="50%">
 
